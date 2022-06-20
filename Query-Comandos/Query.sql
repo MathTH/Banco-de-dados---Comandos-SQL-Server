@@ -56,3 +56,37 @@ SELECT * FROM Person.Person WHERE BusinessEntityID = '285';
 
 /* Puxando as informações de e-mail do ID 285 */
 SELECT * FROM Person.EmailAddress WHERE BusinessEntityID = '285';
+
+/* Fazendo uma consulta para mostrar todos os dados cadastrados no banco de dados dos ID 285, 193 e 381 */
+
+SELECT * FROM  Person.Person WHERE BusinessEntityID = '193' 
+GO
+SELECT * FROM  Person.Person WHERE BusinessEntityID = '285' 
+GO
+SELECT * FROM  Person.Person WHERE BusinessEntityID = '381'; 
+  
+/* ------------------------------------------------------------------------ */
+
+SELECT * FROM  Person.BusinessEntityAddress WHERE BusinessEntityID = '193' 
+GO
+SELECT * FROM  Person.BusinessEntityAddress WHERE BusinessEntityID = '285' 
+GO
+SELECT * FROM  Person.BusinessEntityAddress WHERE BusinessEntityID = '381'; 
+
+/* ------------------------------------------------------------------------ */
+
+SELECT * FROM Person.Address WHERE AddressID = '127'; /* BusinessEntityID = '193' */
+GO
+SELECT * FROM Person.Address WHERE AddressID = '3'; /* BusinessEntityID = '285' */
+GO
+SELECT * FROM Person.Address WHERE AddressID = 'NULL'; /* BusinessEntityID = '281' */
+
+/* ------------------------------------------------------------------------ */
+
+SELECT * FROM  Person.EmailAddress WHERE BusinessEntityID = '193' /* alejandro0@adventure-works.com */
+GO
+SELECT * FROM  Person.EmailAddress WHERE BusinessEntityID = '285' /* syed0@adventure-works.com */
+GO
+SELECT * FROM  Person.EmailAddress WHERE BusinessEntityID = '381'; /* stephen1@adventure-works.com */
+
+/* ------------------------------------------------------------------------ */
