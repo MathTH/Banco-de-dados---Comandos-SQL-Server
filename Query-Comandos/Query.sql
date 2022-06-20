@@ -90,3 +90,13 @@ GO
 SELECT * FROM  Person.EmailAddress WHERE BusinessEntityID = '381'; /* stephen1@adventure-works.com */
 
 /* ------------------------------------------------------------------------ */
+
+SELECT * FROM Person.PersonPhone;
+
+SELECT * FROM  Person.PersonPhone WHERE BusinessEntityID = '193' /* 668-555-0130 */
+GO
+SELECT * FROM  Person.PersonPhone WHERE BusinessEntityID = '285' /* 926-555-0182 */
+GO
+SELECT * FROM  Person.PersonPhone WHERE BusinessEntityID = '381'; /* 818-555-0171 */
+
+/* ------------------------------------------------------------------------ */
