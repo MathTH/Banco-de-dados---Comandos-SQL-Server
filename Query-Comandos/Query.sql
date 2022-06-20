@@ -100,3 +100,13 @@ GO
 SELECT * FROM  Person.PersonPhone WHERE BusinessEntityID = '381'; /* 818-555-0171 */
 
 /* ------------------------------------------------------------------------ */
+
+SELECT * FROM Person.Password;
+
+SELECT * FROM  Person.Password WHERE BusinessEntityID = '193' 
+GO
+SELECT * FROM  Person.Password WHERE BusinessEntityID = '285' 
+GO
+SELECT * FROM  Person.Password WHERE BusinessEntityID = '381';
+
+/* ------------------------------------------------------------------------ */
