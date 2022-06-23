@@ -267,3 +267,8 @@ where [_].[BrandName] = 'Wide World Importers' and [_].[BrandName] is not null
        
 
 /* ------------------------------------------------------------------------ */    
+
+--Puxa as informações de todas as tabelas que tem no banco de dados--
+SELECT * FROM information_schema.tables;
+
+/* ------------------------------------------------------------------------ */  
